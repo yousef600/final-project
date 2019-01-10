@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     margin: 0;
-    background: #f5f6f7;;
+    background: #ffffff;
 }
 /* Typography */
 a {
@@ -35,18 +35,18 @@ a {
 }
 h1{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 40px;
+    font-size: 60px;
     /* position: absolute; */
     margin-right: 300px;
     margin-left: 10px;
-    margin-top: 50px;
+    margin-top: -15px;
     margin-bottom: 40px;
-    color: #ffb19e;
+    color: #003862;
 }
 p {
     
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     /* font-weight: 600; */
     color: black;
     line-height: 1.7;
@@ -60,6 +60,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 header nav ul {
     display: flex;
@@ -78,11 +79,12 @@ nav ul li a {
 }
 .logo {
     position: relative;
-    font-size: 30px;
+    font-size: 30px;  
     font-weight: 900;
-    color: #ffb19e;
+    color: #0a0a0a;
     letter-spacing: 0.2em;
-    margin-right: 60px;
+    margin-left: 100px;
+    
 }
  
 .container {
@@ -94,6 +96,9 @@ nav ul li a {
     margin: 0 auto;
    
 }
+
+
+
 .barcelona {
     display: flex;
 }
@@ -122,10 +127,144 @@ header nav ul li.about::after {
     background: #DBA380; /* color it :) */
 
 }
-/* footer */
-.info {
+/* aside */
+aside {
+    position: absolute;
+    left: -60px;
+    top: 50%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    transform: rotate(-90deg);
+}
+
+aside img {
+    transform: rotate(90deg);
+    margin-right: 16px;
+    width: 24px;
     
+}
+aside .overline {
+    margin-bottom: 0;
+}
+.overline {
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #aaaaaa;
+    position: relative;
+    margin-left: 60px;
+}
+
+.overline::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #aaaaaa;
+    top: 40%;
+    left: -60px;
+}
+/* footer */
+#pinguin{
+    position: absolute;
+    background-color: #e2e2eb;
+    text-align: center; 
+    font-size: 10px;
+    bottom: -250px;  
+    width: 100%; 
+    height: 25px;
+}
+#pinguin p {
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 3px;
+}
+/* contect */
+.paris{
+    /* border: 2px solid red; */
+    /* background-color: aqua; */
+ position: absolute;
+ top: 10%;
+left: 30%;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+#parisp{
+    position: absolute;
+    background-color: #e2e2eb;
+    text-align: center; 
+    font-size: 10px;
+    bottom: 10px;  
+    width: 100%; 
+    height: 25px;
+}
+   
+#parisp p {
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 3px;
+}
+/* medium */
+.im {
+    display: flex;
+
+}
+.im img {
+   max-width: 140px;
+   max-height: 140px;
+   margin-right: 15px
+}
+.im{
+    position: absolute;
+    top: 40%;
+    left: 200px;
+
+}
+ #pinguinm {
+    position: absolute;
+    background-color: #e2e2eb;
+    text-align: center; 
+    font-size: 5px;
+    bottom: 10px;  
+    width: 100%; 
+    height: 25px;
+    /* bottom: 0;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%; */
+} 
+#pinguinm p {
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 3px;
+}
+#pinguin p {
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 3px;
+}
+
+.welcome {
+    font-size: 36px;
+    position: absolute;
+    left: 185px;
+    padding-bottom: 15px;
+}
+/* @media */
+@media screen and (max-width: 800px) {
+    .barcelona {
+        display: block;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .barcelona {
+        display: block;
+    }
+}
